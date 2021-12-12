@@ -7,9 +7,9 @@
 #define V_REF 1100
 
 //Variaveis do protocolo MQTT
-const char* ssid = "Virus1";
-const char* password =  "Test(123)";
-const char* mqttServer = "192.168.0.107";//endereço ip da raspberry, pode mudar se o roteador não estiver configurado como estático
+const char* ssid = "xxxx";
+const char* password =  "xxxxx";
+const char* mqttServer = "192.168.0.asd";//endereço ip da raspberry, pode mudar se o roteador não estiver configurado como estático
 const int mqttPort = 1883;
 
 WiFiClient espClient;
@@ -72,7 +72,6 @@ float leituraTemperatura() {
     delay(30);
   }
 
-
   for (int i = 0; i < 10; i++)
   {
     somaTemperatura = bufTemperatura[i] + somaTemperatura;
@@ -80,9 +79,7 @@ float leituraTemperatura() {
   }
 
   mediaTemperatura = somaTemperatura / 10;
-
-
-
+  
   Serial.print("Temperatura: ");
   Serial.println(mediaTemperatura);
 
@@ -92,7 +89,6 @@ float leituraTemperatura() {
 
   //delay(2000);
 }
-
 
 float leituraTurbidez() {
   esp_adc_cal_characteristics_t characteristics;
@@ -106,8 +102,6 @@ float leituraTurbidez() {
     bufTurbidez[i] = turbidez;
     delay(30);
   }
-
-
 
   //printf("%.3f V\n", voltage2);
 
