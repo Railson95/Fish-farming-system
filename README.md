@@ -1,11 +1,9 @@
 # Sistema de Piscicultura, usando IoT
 Sobre
 =================
-Sistema que possui um ESP32 e a ele integrado estão sensores de ph,  
-temperatura e turbidez. Após coletados, esses parâmetros 
-são enviados via protocolo MQTT para uma RaspBerry Pi 0 w, que faz a interface 
-gráfica com o usuário via API node-red e também serve de servidor dedicado.
-Todos os sensores foram validados e calibrados conforme sensores industriais.
+Sistema que possui um ESP32 e a ele integrado estão sensores de ph, temperatura e turbidez. Após coletados, esses parâmetros são enviados via protocolo 
+MQTT para uma RaspBerry Pi 0 w, que faz a interface gráfica com o usuário via API node-red e também serve de servidor dedicado.Todos os sensores foram 
+validados e calibrados conforme sensores industriais.
 
 <img src="https://img.shields.io/badge/c++-esp32-blue"/> <img src="https://img.shields.io/badge/raspberryPi0W-NodeRed-orange"/>
 
