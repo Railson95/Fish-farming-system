@@ -1,70 +1,71 @@
-# Sistema de Piscicultura, usando IoT
-Sobre
+# Fish farming system, using IoT
+About
 =================
-Sistema que possui um ESP32 e a ele integrado estão sensores de ph, temperatura e turbidez. Após coletados, esses parâmetros são enviados via protocolo 
-MQTT para uma RaspBerry Pi 0 w, que faz a interface gráfica com o usuário via API node-red e também serve de servidor dedicado.Todos os sensores foram 
-validados e calibrados conforme sensores industriais.
+System that has an ESP32 and integrated with it are ph, temperature and turbidity sensors. 
+After collection, these parameters are sent via the MQTT protocol to a RaspBerry Pi 0 w, 
+which provides the graphical user interface via the node-red API and also serves as a dedicated server. 
+All sensors were validated and calibrated according to industrial sensors.
 
 <img src="https://img.shields.io/badge/c++-esp32-blue"/> <img src="https://img.shields.io/badge/raspberryPi0W-NodeRed-orange"/>
 
-Tabela de conteúdos
+Table of Contents
 =================
 <!--ts-->
-   * [Sobre](#Sobre)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Funcionamento](#funcionamento)
-   * [Tests](#testes)
-      * [Resultado final do sistema com os dados mostrados na API Node-Red](#resultado-final-do-sistema-com-os-dados-mostrados-na-API-Node-Red)
-   * [Status do projeto](#status-do-projeto)
-   * [Tecnologias](#tecnologias)
+   * [About](#About)
+   * [Table of Contents](#table-of-contents)
+   * [How to use](#how-to-use)
+      * [Pre Requirements](#pre-requirements)
+      * [Operation](#operation)
+   * [Tests](#tests)
+      * [Final result of the system with the data shown in the Node-Red API](#final-result)
+   * [Project status](#project-status)
+   * [Technologies](#technologies)
 <!--te-->
 
-Como usar
+How to use
 =================
 
-Pre Requisitos
+Pre Requirements
 ----
 ```bash
-Para rodar o sistema será necessário a instalação
-*IDE Arduino, configurada com a biblioteca do ESP32
-*Configuração dos ips e senhas da rede wifi
-*Raspberry Pi, instalação do mosquito 
-*Instalação da API Node-Red na Raspberry Pi
+To run the system you will need to install
+*Arduino IDE, configured with the ESP32 library
+*Configuration of ips and wifi network passwords
+*Raspberry Pi, mosquito installation
+*Installing Node-Red API on Raspberry Pi
 ```
 
-Funcionamento
+Operation
 ----
 ```bash
-Os dados dos sensores serão coletados e enviados de forma automática para a Raspberry Pi
+Sensor data will be automatically collected and sent to the Raspberry Pi
 ```
 
 Tests
 =================
-Resultado final do sistema com os dados mostrados na API Node-Red
+Final result of the system with the data shown in the Node-Red API
 ----
 <div align="center">
 <img src="https://user-images.githubusercontent.com/43474214/148824888-47212901-dafc-491a-bc55-f5975c9cb330.png" width="700px" />
 </div>
 
 
-Status do projeto
+Project status
 =================
 
 <h4 align="center"> 
-	🚧  Sistema de piscicultura de baixo custo 🚀 Terminado...  🚧
+	🚧  Low cost fish farming system 🚀 under development 🚧
 </h4>
 
-Tecnologias
+Technologies
 =================
 
 <img src="https://img.shields.io/badge/c++-esp32-blue"/> <img src="https://img.shields.io/badge/raspberryPi0W-NodeRed-orange"/> <img src="https://img.shields.io/badge/Mosquito-Broker-MQTT"/> <img src="https://img.shields.io/badge/IDE-Arduino-orange"/> <img src="https://img.shields.io/badge/Instrumentação-Sensores-orange"/>
 
-Autor
+Author
 ---
 
-Feito por Railson Maritns 👋🏽 Entre em contato!
+Made by Railson Martins 👋🏽!
 
 
 
